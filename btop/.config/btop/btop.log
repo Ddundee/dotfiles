@@ -1,0 +1,21 @@
+
+2025/03/24 (15:19:09) | ===> btop++ v.1.4.0
+2025/03/24 (15:19:09) | ERROR: Stall in Runner thread, restarting!
+
+2025/04/17 (13:24:12) | ===> btop++ v.1.4.0
+2025/04/17 (13:24:12) | WARNING: Config value update_ms set too low (<100).
+
+2025/04/17 (13:26:01) | ===> btop++ v.1.4.0
+2025/04/17 (13:26:01) | WARNING: Config value update_ms set too low (<100).
+
+2025/04/21 (08:13:40) | ===> btop++ v.1.4.0
+2025/04/21 (08:13:40) | ERROR: failed getting network interfaces
+
+2025/05/02 (14:31:59) | ===> btop++ v.1.4.0
+2025/05/02 (14:31:59) | ERROR: failed getting network interfaces
+
+2025/05/04 (09:37:43) | ===> btop++ v.1.4.0
+2025/05/04 (09:37:43) | ERROR: failed getting network interfaces
+
+2025/05/05 (04:29:45) | ===> btop++ v.1.4.0
+2025/05/05 (04:29:45) | ERROR: failed getting network interfaces
