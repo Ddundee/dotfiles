@@ -1,11 +1,15 @@
 if [ -z "$TMUX" ]; then
     tmux new-session -d -A -s cmd
     tmux new-window -t cmd:2
-    tmux new-window -t cmd:9 -n monitor  'btop'
-    tmux new-window -t cmd:3 -n rocky    'orb start && docker start -i cs2505-env'
+    # tmux new-window -t cmd:9 -n monitor  'btop'
+    # tmux new-window -t cmd:3 -n rocky    'orb start && docker start -i cs2505-env'
+
     tmux select-window -t cmd:2
     tmux select-window -t cmd:1
     exec tmux attach -t cmd
+fi
+if [ ! -z "$TMUX" ]; then
+    alias rocky="tmux new-window -n rocky 'orb start && docker start -i cs2505-env'"
 fi
 
 # Enable Powerlevel11k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -233,3 +237,5 @@ done
 # you-should-use
 export YSU_HARDCORE=1
 export EDITOR=nvim
+
+export PATH=$PATH:/Users/dhanushchilakala/.spicetify
