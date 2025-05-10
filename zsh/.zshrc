@@ -1,13 +1,13 @@
-if [ -z "$TMUX" ]; then
-    tmux new-session -d -A -s cmd
-    tmux new-window -t cmd:2
-    # tmux new-window -t cmd:9 -n monitor  'btop'
-    # tmux new-window -t cmd:3 -n rocky    'orb start && docker start -i cs2505-env'
-
-    tmux select-window -t cmd:2
-    tmux select-window -t cmd:1
-    exec tmux attach -t cmd
-fi
+# if [ -z "$TMUX" ]; then
+#     tmux new-session -d -A -s cmd
+#     tmux new-window -t cmd:2
+#     # tmux new-window -t cmd:9 -n monitor  'btop'
+#     # tmux new-window -t cmd:3 -n rocky    'orb start && docker start -i cs2505-env'
+#
+#     tmux select-window -t cmd:2
+#     tmux select-window -t cmd:1
+#     exec tmux attach -t cmd
+# fi
 if [ ! -z "$TMUX" ]; then
     alias rocky="tmux new-window -n rocky 'orb start && docker start -i cs2505-env'"
 fi
@@ -131,6 +131,7 @@ alias ls="ls -G --color"
 alias lg="lazygit"
 alias ff="xplr"
 alias fcd='cd "$(xplr --print-pwd-as-result)"'
+alias tstart='tmux new-session -d -A -s cmd && tmux new-window -t cmd:2 && tmux select-window -t cmd:2 && tmux select-window -t cmd:1 && tmux attach -t cmd'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm

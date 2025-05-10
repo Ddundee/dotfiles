@@ -7,4 +7,4 @@ clipboard-paste-protection = true
 keybind = cmd+d=unbind
 keybind = cmd+a=unbind
 keybind = cmd+t=unbind
-font-family = "Geist Mono"
+font-family = "Jetbrains Mono"
