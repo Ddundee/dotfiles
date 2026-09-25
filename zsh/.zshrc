@@ -236,7 +236,18 @@ done
 
 
 # you-should-use
-export YSU_HARDCORE=1
+# export YSU_HARDCORE=0
 export EDITOR=nvim
 
 export PATH=$PATH:/Users/dhanushchilakala/.spicetify
+
+# opencode
+export PATH=/Users/dhanushchilakala/.opencode/bin:$PATH
+
+
+alias clearcache="sudo rm -rf ~/Library/Caches/* && echo Cache cleared!"
+
+fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# Vite+ bin (https://viteplus.dev)
+. "$HOME/.vite-plus/env"
